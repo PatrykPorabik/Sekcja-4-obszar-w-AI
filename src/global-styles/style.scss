@@ -7,7 +7,7 @@
 
 body {
   background-color: var(--color-primary-blue);
-  color: var(--color-secondary-white);
+  color: var(--white);
   font-family: 'DM Sans', sans-serif;
   font-size: 14px;
   letter-spacing: 0;
@@ -27,7 +27,6 @@ body {
   }
 }
 .box-container {
-
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
@@ -38,7 +37,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 16px 24px;
-    flex: 1 1 40%;
     text-align: center;
   }
 
@@ -60,10 +58,6 @@ body {
   }
 }
 
-p {
-  color: var(--color-secondary-white);
-}
-
 @media (min-width: 768px) {
   body {
     font-size: 16px;
@@ -83,8 +77,10 @@ p {
   }
   .page {
     flex-direction: row;
+    width: 100%;
     & &__wrapper {
       margin: 0 109px 0 0;
+      width: 60%;
     }
     & &__heading {
       font-size: 48px;
@@ -97,7 +93,8 @@ p {
     gap: 24px;
     grid-gap: 24px;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: auto;
     margin: 0 auto;
+    width: 71%;
   }
 }
