@@ -453,6 +453,10 @@ p {
   .page .page__wrapper {
     margin: 0 109px 0 0;
   }
+  .page .page__heading {
+    font-size: 48px;
+    line-height: 56px;
+  }
   .box-container {
     display: -ms-grid;
     display: grid;
